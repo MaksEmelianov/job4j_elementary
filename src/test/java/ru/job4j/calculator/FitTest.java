@@ -22,14 +22,6 @@ public class FitTest {
     }
 
     @Test
-    public void whenMan0ThenMinus115() {
-        short in = 0;
-        double expected = -115;
-        double out = Fit.manWeight(in);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
     public void whenWoman170Then69() {
         short in = 170;
         double expected = 69;
@@ -41,14 +33,6 @@ public class FitTest {
     public void whenWoman110Then0() {
         short in = 110;
         double expected = 0;
-        double out = Fit.womanWeight(in);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
-    public void whenWoman0ThenMinus126dot5() {
-        short in = 0;
-        double expected = -126.5;
         double out = Fit.womanWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
