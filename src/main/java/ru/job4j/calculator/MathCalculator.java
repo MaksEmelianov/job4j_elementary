@@ -17,8 +17,8 @@ public class MathCalculator {
     }
 
     public static void main(String[] args) {
-        System.out.println("Результат расчета суммы и произведения: " + sumAndMulti(12, 21));
-        System.out.println("Результат расчета разности и деления: " + diffAndDiv(12, 21));
-        System.out.println("Результат расчета суммы всех операций: " + sumAllMethodFromMath(12, 21));
+        System.out.println("Результат расчета sumAndMulti равен: " + sumAndMulti(12, 21));
+        System.out.println("Результат расчета diffAndDiv равен: " + diffAndDiv(12, 21));
+        System.out.println("Результат расчета sumAllMethodFromMath равен: " + sumAllMethodFromMath(12, 21));
     }
 }
