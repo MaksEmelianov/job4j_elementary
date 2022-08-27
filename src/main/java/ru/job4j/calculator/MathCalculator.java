@@ -17,8 +17,8 @@ public class MathCalculator {
     }
 
     public static void main(String[] args) {
-        System.out.println("Πεησλόςΰς πΰρχεςΰ sumAndMulti πΰβεν: " + sumAndMulti(12, 21));
-        System.out.println("Πεησλόςΰς πΰρχεςΰ diffAndDiv πΰβεν: " + diffAndDiv(12, 21));
-        System.out.println("Πεησλόςΰς πΰρχεςΰ sumAllMethodFromMath πΰβεν: " + sumAllMethodFromMath(12, 21));
+        System.out.println("Π ΠµΠ·ΡƒΠ»ΡΡ‚Π°Ρ‚ Ρ€Π°ΡΡ‡ΠµΡ‚Π° sumAndMulti Ρ€Π°Π²ΠµΠ½: " + sumAndMulti(12, 21));
+        System.out.println("Π ΠµΠ·ΡƒΠ»ΡΡ‚Π°Ρ‚ Ρ€Π°ΡΡ‡ΠµΡ‚Π° diffAndDiv Ρ€Π°Π²ΠµΠ½: " + diffAndDiv(12, 21));
+        System.out.println("Π ΠµΠ·ΡƒΠ»ΡΡ‚Π°Ρ‚ Ρ€Π°ΡΡ‡ΠµΡ‚Π° sumAllMethodFromMath Ρ€Π°Π²ΠµΠ½: " + sumAllMethodFromMath(12, 21));
     }
 }
