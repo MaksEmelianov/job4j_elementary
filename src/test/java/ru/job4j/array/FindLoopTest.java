@@ -39,7 +39,7 @@ class FindLoopTest {
         int[] data = {8, 7, 3, 8, 2, 5, 4, 2};
         int el = 8;
         int start = 2;
-        int finish = 5;
+        int finish = 6;
         int rsl = FindLoop.indexInRange(data, el, start, finish);
         int expected = 3;
         assertThat(rsl).isEqualTo(expected);
