@@ -16,7 +16,7 @@ class MinTest {
     }
 
     @Test
-    void whenMiddletMin() {
+    void whenMiddleMin() {
         int[] array = {10, 2, 3};
         int rsl = Min.findMin(array);
         int expected = 2;
@@ -24,7 +24,7 @@ class MinTest {
     }
 
     @Test
-    void whenLasttMin() {
+    void whenLastMin() {
         int[] array = {10, 20, 3};
         int rsl = Min.findMin(array);
         int expected = 3;
