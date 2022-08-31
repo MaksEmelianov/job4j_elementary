@@ -7,18 +7,18 @@ public class JavaNameValidator {
             return false;
         }
         char[] arrayChar = name.toCharArray();
-        if (!isLowerLatinLetter(arrayChar[0])) {
-            return false;
-        }
-        for (int ch = 1; ch < arrayChar.length; ch++) {
-            if (!(isSpecialSymbol(arrayChar[ch])
-                    || isUpperLatinLetter(arrayChar[ch])
-                    || isLowerLatinLetter(arrayChar[ch])
-                    || Character.isDigit(arrayChar[ch]))) {
-                return false;
+        boolean rsl = isLowerLatinLetter(arrayChar[0]);
+            if (rsl) {
+                for (int ch = 1; ch < arrayChar.length; ch++) {
+                    if (!(isSpecialSymbol(arrayChar[ch])
+                            || isUpperLatinLetter(arrayChar[ch])
+                            || isLowerLatinLetter(arrayChar[ch])
+                            || Character.isDigit(arrayChar[ch]))) {
+                        rsl = false;
+                    }
+                }
             }
-        }
-        return true;
+        return rsl;
     }
 
     public static boolean isSpecialSymbol(int code) {
