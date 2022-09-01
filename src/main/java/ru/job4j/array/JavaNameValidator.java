@@ -3,12 +3,9 @@ package ru.job4j.array;
 public class JavaNameValidator {
 
     public static boolean isNameValid(String name) {
-        if (name.isEmpty()) {
-            return false;
-        }
-        char[] arrayChar = name.toCharArray();
-        boolean rsl = isLowerLatinLetter(arrayChar[0]);
+        boolean rsl = !name.isEmpty() && isLowerLatinLetter(name.charAt(0));
             if (rsl) {
+                char[] arrayChar = name.toCharArray();
                 for (int ch = 1; ch < arrayChar.length; ch++) {
                     if (!(isSpecialSymbol(arrayChar[ch])
                             || isUpperLatinLetter(arrayChar[ch])
