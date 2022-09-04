@@ -41,4 +41,22 @@ public class PointTest {
         double out = p1.distance(p2);
         assertThat(out).isCloseTo(expected, offset(0.01));
     }
+
+    @Test
+    public void when123to123then0() {
+        double expected = 0;
+        Point p1 = new Point(1, 2, 3);
+        Point p2 = new Point(1, 2, 3);
+        double out = p1.distance(p2);
+        assertThat(out).isEqualTo(expected);
+    }
+
+    @Test
+    public void when123to456then4dot24() {
+        double expected = 4.24;
+        Point p1 = new Point(1, 2, 3);
+        Point p2 = new Point(4, 5, 6);
+        double out = p1.distance(p2);
+        assertThat(out).isCloseTo(expected, offset(0.01));
+    }
 }
