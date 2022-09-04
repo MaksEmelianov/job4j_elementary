@@ -11,9 +11,11 @@ public class Club {
     }
 
     public static void main(String[] args) {
-        Club.permission(true, true);
-        Club.permission(true, false);
-        Club.permission(false, true);
-        Club.permission(false, false);
+        for (boolean b : new boolean[]{true, false}) {
+            permission(true, b);
+        }
+        for (boolean b : new boolean[]{true, false}) {
+            permission(false, b);
+        }
     }
 }

@@ -12,8 +12,8 @@ public class Cinema {
     }
 
     public static void main(String[] args) {
-        access(21);
-        access(18);
-        access(16);
+        for (int i : new int[]{21, 18, 16}) {
+            access(i);
+        }
     }
 }
